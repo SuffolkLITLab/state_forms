@@ -9,5 +9,5 @@ GA was the first state encountered with compressed folders containing multiple f
 # Actions taken
 
 1. Extracts the different categories and the links to those categories.
-2. Extracts the individual forms and zip files from the categories. Due to the presence of zip files, some additional functions are used (look helper functions)
-3. Helper functions are functions used in every states code
+2. Extracts the individual forms and zip files from the categories. Due to the presence of zip files, some additional functions are used (look helper functions).
+3. Helper functions are functions used in every states code.
