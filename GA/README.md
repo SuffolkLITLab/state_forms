@@ -16,5 +16,5 @@ GA had many compressed folders containing multiple forms (i.e. zip files). After
 
 - The first block of every notebook contains the functions and modules necessary to scrape the states. 
 - ***NEVER*** start by trying to scrape the entire website at once. Break your process in small steps. 
-  a. Start by making two arrays; one for the different form categories and one for their unique urls. If all the categories are part of the same page, the latter is not    needed. 
-  b. When you make sure the categories are extracted succesfully, continue by accessing the individual categories and collecting the forms (along with the necessary metadata). 
+  - Start by making two arrays; one for the different form categories and one for their unique urls. If all the categories are part of the same page, the latter is not    needed. 
+  - When you make sure the categories are extracted succesfully, continue by accessing the individual categories and collecting the forms (along with the necessary metadata). 
