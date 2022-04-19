@@ -19,3 +19,4 @@ GA had many compressed folders containing multiple forms (i.e. zip files). After
   - Start by making two arrays; one for the different form categories and one for their unique urls. If all the categories are part of the same page, the latter is not    needed. 
   - When you make sure the categories are extracted succesfully, continue by accessing the individual categories and collecting the forms (along with the necessary metadata). 
   - Once the forms are collected, check your metadata file for downloads that resulted into an error. If more than 20% of the collected **.pdf** files have an error status, use **`download_pdf_unmasked()`** and attempt to download the files again. This will allow you to see the error that caused the original function to fail. 
+- Some website don't appreciate the multiple (and fast) requests our script is sending to their server. Be gentle with your data provider by adding **`time.sleep()`**. 
