@@ -14,7 +14,8 @@ GA had many compressed folders containing multiple forms (i.e. zip files). After
 
 # Additional comments 
 
-- The first block of every notebook contains the functions and modules necessary to scrape the states. 
+- The first block of every notebook contains the functions and modules necessary to scrape the states (when downloading **.pdf** files, use the **`download_pdf()`** (**`download_pdf_unmasked()`** is for debbuging purposes only) . 
 - ***NEVER*** start by trying to scrape the entire website at once. Break your process in small steps. 
   - Start by making two arrays; one for the different form categories and one for their unique urls. If all the categories are part of the same page, the latter is not    needed. 
   - When you make sure the categories are extracted succesfully, continue by accessing the individual categories and collecting the forms (along with the necessary metadata). 
+  - Once the forms are collected, check your metadata file for downloads that resulted into an error. If more than 20% of the collected files have an error status, use **`download_pdf_unmasked()`** and attempt to download the files again. This will allow you to see the error that caused the original function to fail. 
