@@ -9,7 +9,7 @@ Notes on the code in this folder
 -The **page_nums** array contains the number of pages that each category has (manually derived).
 
 - The third block of the notebook contains the main logic (which is very similar to other scripts):
-- For each category, we extract the forms from each page and build our metadata file.
+  - For each category, we extract the forms from each page and build our metadata file.
 
 # Additional comments
 
