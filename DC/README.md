@@ -5,6 +5,7 @@ Notes on the code in this folder
 # The script
 
 -At first glance, we cannot see any categories. When such a website is encountered, try extracting the category list of the **Search** dropdown menu. Since only the names of the categories are found and not their urls, you need to search for clues that will allow you to navigate to individual categories. By manipulating the **start** url (found by inspecting the **_Load More_** button at the bottom), navigating to individual groups became possible.
+
 -The **page_nums** array contains the number of pages that each category has (manually derived).
 
 - The third block of the notebook contains the main logic (which is very similar to other scripts):
