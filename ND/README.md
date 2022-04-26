@@ -4,12 +4,12 @@ Notes on the code in this folder
 
 # Things to note
 
-NV was a very easy state. No significant errors during download were observed.
+ND was challenging and time-consuming. There were two links for the ND website. The code explicitly mentions in which blocks each link is visited and scraped. The structure of the tables in which the forms resided was very vague. After extracting the group names, the subcategories/pdfs of each group was counted manually (and saved in the **`num_of_forms`** and **`groups_subcats`** arrays). The first six subcategories/pdfs are under the first group, the next five under the second group and so on...
 
 # The script
 
-1. Extracts the different categories and the links for each category.
-2. Individual categories are visited and their forms are extracted.
+1. Extracts the different categories and the links included in each category (these include both subcategories and pdfs).
+2. In the for-loop, after checking whether the link is a pdf or a subcategory, we either download the page or visit the subcategory and extract the forms included.
 
 # Additional comments
 
@@ -22,4 +22,4 @@ NV was a very easy state. No significant errors during download were observed.
 
 # Cells to run
 
-- Run all cells to collect the data.
+- Run all cells to collect the data (for both URLs).

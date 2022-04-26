@@ -18,3 +18,8 @@ Notes on the code in this folder
   - When you make sure the categories are extracted succesfully, continue by accessing the individual categories and collecting the forms (along with the necessary metadata).
   - Once the forms are collected, check your metadata file for downloads that resulted into an error. If more than 20% of the collected **.pdf** files have an error status, use **`download_pdf_unmasked()`** and attempt to download the files again. This will allow you to see the error that caused the original function to fail.
 - Some website don't appreciate the multiple (and fast) requests our script is sending to their server. Be gentle with your data provider by adding **`time.sleep()`**.
+
+# Cells to run
+
+- All blocks of code need to be executed for the data to be collected.
+- The **status** column in the dataframe in which the metada data are being saved is used to identify downloads that produced an error. If these errors don't constitute the majority of the downloads, it is recommended to search the download folder and delete the faulty documents. If more than 20% of the downloads resulted into an error, something might be wrong with the script.
